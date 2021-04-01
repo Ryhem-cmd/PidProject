@@ -50,11 +50,15 @@
 
                     </div>
                     <ul>
-                        <li>   {% if app.user %}
+                        <li>
+
+                            {% if app.user %}
                                 <div class="mb-3">
+
                                     <a href="{{ path('delete', {'id': app.user.id}) }}">Delete</a>
                                 </div>
                             {% endif %}
+
                         </li>
 
                     </ul>

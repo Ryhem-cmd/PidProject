@@ -85,6 +85,7 @@ class SecurityController extends AbstractController
                 'There are no user with the following id: ' . $id
             );
         }
+
         $em->remove($user);
         $em->flush();
         return $this->redirect($this->generateUrl('home'));
